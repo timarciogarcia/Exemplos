@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESAFIO JS/HTML/CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>  
+  <div class="container">    
+    <div class="header">
+      <label onclick="utils.sizeScreen()">Lista dos Produtos</label>
+      <div>
+        <label class="pesquisa">Pesquisa:</label>
+        <input onclick="search.placeHolderClear()" onkeyup="search.onSearchForWord()" type="text" id="m-search" name="search" title="Digite aqui sua pesquisa." />
+        <button class="buttonClear" title="Apagar os dados da consulta e retornar as informações originais" onclick="search.clearSearch()"><i class="bx bx-eraser"></i>Limpar</button>
+      </div>
+      <div>
+      <button onclick="dataBase.insertItem()" id="new"  title="Incluir um novo produto">Incluir</i></button>
+      </div>
+    </div>
+
+    <div class="divTable">
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Peso<br>(Cm)</th>
+            <th>Altura<br>(Cm)</th>
+            <th>Largura<br>(Cm)</th>
+            <th>Comprimento<br>(Cm)</th>
+            <th>Estoque<br>(Un)</th>
+            <th>Data de<br>Cadastro</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody class="list">
+        </tbody>
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <h2 id="m-titulo"></h2>
+        <form>
+
+          <input id="m-id" type="hidden" maxlength="25"  />
+          <input id="m-index" type="hidden" maxlength="25"  />
+  
+          <label for="m-descricao">Descrição
+          <input id="m-descricao" type="text" maxlength="25" required="true" />
+          </label>
+
+          <label for="m-categoria">Tipos de Embalagens:
+          <select id="m-categoria" title="Selecione o tipo da embalagem"  required="true" >
+            <option value="Papelão">Papelão</option>
+            <option value="Isopor">Isopor</option>
+            <option value="Alumínio">Alumínio</option>
+            <option value="Plástico" selected>Plástico</option>
+          </select>
+          </label>
+
+          <div>
+            <label for="m-peso">Peso (Gr)
+            <input id="m-peso" type="number" title="Preencha o peso em gramas" maxlength="6" min="0" oninput="validity.valid||(value='');"  required="true" />
+            </label>
+            &nbsp;
+            <label for="m-altura">Altura (Cm)
+            <input id="m-altura" type="number" title="Preencha a altura em centímetros" maxlength="6" min="0" oninput="validity.valid||(value='');" required="true" />
+            </label>
+            &nbsp;
+            <label for="m-largura">Largura (Cm)
+            <input id="m-largura" type="number"  title="Preencha a largura em centímetros" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
+            </label>
+            &nbsp;
+            <label for="m-comprimento">Comprimento (Cm)
+            <input id="m-comprimento" type="number"  title="Preencha o comprimento em centímetros" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
+            </label>
+            &nbsp;
+            <label for="m-estoque">Estoque (Un)
+            <input id="m-estoque" type="number"  title="Preencha o estoque em unidades" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
+            </label>
+          </div>
+          <button onclick="dataBase.saveItem()" class="salvar" id="btnSalvar" title="Salvar as informações">S A L V A R</button>
+          <button onclick="dataBase.voltar()" class="voltar" id="btnVoltar" title="Voltar e não salvar as informações">V O L T A R</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <div id="fisrt" class="first" title="Primeira página"><button><i class='bx bx-first-page'></i></button></div>
+    <div id="prev" class="prev" title="Página anterior"><button><i class='bx bx-caret-left'></i></button></div>
+    <div id="numbers" class="numbers" title="Página atual" class="match"><button class="m-preenche"></button></div>
+    <div id="next" class="next" title="Próxima página"><button><i class='bx bx-caret-right'></i></button></div>
+    <div id="last" class="last" title="Última página"><button><i class='bx bx-last-page'></i></button></div>
+  </div>
+
+  <div class="divplus">
+    <div></div>
+    <div class="plus">
+      <a href="javascript:dataBase.populated()">Popular DB </a>
+      <a href="javascript:dataBase.erase()">Limpar DB</a>
+    </div>
+    <div class="plus">
+      <label> - Indústria de Embalagens Desafio Brasil Ltda.</label>
+    </div>
+  </div>  
+  <script src="script.js"></script>
+</body>
+
+</html>
