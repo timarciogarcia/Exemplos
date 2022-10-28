@@ -1,0 +1,33 @@
+.form_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form_control label {
+    margin-bottom: .1em;
+    margin-left: .1em;
+    font-weight: bold;
+}
+
+.form_control Select {
+    padding: 0.5em;
+    border-radius: 10;
+    border: 1px solid rgb(171, 191, 247);
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.form_control select option {
+    padding: 0.5em;
+    border-radius: 10;
+    border: 1px solid rgb(171, 191, 247);
+    background-color: rgb(231, 231, 255);
+    font-size: 16px;
+}
+
+.form_control Select:hover {
+    outline: 0;
+    border-color: rgb(0, 58, 218);
+    box-shadow: 0 0 0 0.2rem rgb(171, 223, 247);
+}

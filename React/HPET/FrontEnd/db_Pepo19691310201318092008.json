@@ -1,0 +1,427 @@
+{
+  "sessions": [
+    {
+      "id": 1,
+      "email": "ti.marciogarcia@gmail.com.com",
+      "password": "123",
+      "token": "weiortuywieuryt"
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "id": 2
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 3
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 4
+    },
+    {
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 5
+    },
+    {
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 6
+    },
+    {
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 7
+    },
+    {
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 8
+    },
+    {
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 9
+    },
+    {
+      "user_id": {
+        "id": 1,
+        "name": "Rafael",
+        "email": "Rafa@gmail.com",
+        "password": "pepo1969"
+      },
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 10
+    },
+    {
+      "user_id": {
+        "id": 1,
+        "name": "Rafael",
+        "email": "Rafa@gmail.com",
+        "password": "pepo1969"
+      },
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 11
+    },
+    {
+      "user_id": {
+        "id": 1,
+        "name": "Rafael",
+        "email": "Rafa@gmail.com",
+        "password": "pepo1969"
+      },
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 12
+    },
+    {
+      "user_id": {
+        "id": 1,
+        "name": "Rafael",
+        "email": "Rafa@gmail.com",
+        "password": "pepo1969"
+      },
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 13
+    },
+    {
+      "user_id": {
+        "id": 1,
+        "name": "Rafael",
+        "email": "Rafa@gmail.com",
+        "password": "pepo1969"
+      },
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 14
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 15
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 16
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 17
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 18
+    },
+    {
+      "email": "ti@gmail.com",
+      "password": "pepo1969",
+      "token": "sdfklghipuyhwuioehlksdjhgjklh",
+      "id": 19
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 20
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 21
+    },
+    {
+      "user_id": 1,
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969",
+      "token": "uiiluyotuhiwn84756wn3h9hghwnieryfgn59n8w7t5ngfwgukrgyhv95tgvwytg",
+      "id": 22
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "projects": [
+    {
+      "name": "PLANO DE SAUDE",
+      "budget": "1100",
+      "category": {
+        "id": "2",
+        "name": "Suporte"
+      },
+      "costs": 1000,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "ANTONIO",
+      "budget": "100000333",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "PETSHOP HOSPITAL",
+      "budget": "150000.99",
+      "category": {
+        "id": "4",
+        "name": "Design"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "Factory",
+      "budget": "50000",
+      "category": {
+        "id": "3",
+        "name": "Devs"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Suporte"
+    },
+    {
+      "id": 3,
+      "name": "Devs"
+    },
+    {
+      "id": 4,
+      "name": "Design"
+    },
+    {
+      "id": 5,
+      "name": "Planejamento"
+    }
+  ],
+  "menus": [
+    {
+      "menu": "Home",
+      "link": "/",
+      "submenus": [
+        {}
+      ]
+    },
+    {
+      "menu": "Cadastros",
+      "link": "/",
+      "submenus": [
+        {
+          "submenu": "Raças",
+          "link": "/"
+        },
+        {
+          "submenu": "Espécies",
+          "link": "/"
+        },
+        {
+          "submenu": "Pelagens",
+          "link": "/"
+        },
+        {
+          "submenu": "Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Grupo de Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Patologias",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "menu": "Empresa",
+      "link": "/empresa",
+      "submenus": [
+        {
+          "submenu": "Raças",
+          "link": "/"
+        },
+        {
+          "submenu": "Espécies",
+          "link": "/"
+        },
+        {
+          "submenu": "Pelagens",
+          "link": "/"
+        },
+        {
+          "submenu": "Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Grupo de Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Patologias",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "menu": "Contas a Pagar",
+      "link": "/",
+      "submenus": [
+        {
+          "submenu": "Raças",
+          "link": "/"
+        },
+        {
+          "submenu": "Espécies",
+          "link": "/"
+        },
+        {
+          "submenu": "Pelagens",
+          "link": "/"
+        },
+        {
+          "submenu": "Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Grupo de Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Patologias",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "menu": "Contas a Receber",
+      "link": "/",
+      "submenus": [
+        {
+          "submenu": "Raças",
+          "link": "/"
+        },
+        {
+          "submenu": "Espécies",
+          "link": "/"
+        },
+        {
+          "submenu": "Pelagens",
+          "link": "/"
+        },
+        {
+          "submenu": "Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Grupo de Vacinas",
+          "link": "/"
+        },
+        {
+          "submenu": "Patologias",
+          "link": "/"
+        }
+      ]
+    },
+    {
+      "menu": "Contabilidade",
+      "link": "/",
+      "submenus": [
+        {}
+      ]
+    },
+    {
+      "menu": "Administração",
+      "link": "/administracao",
+      "submenus": [
+        {}
+      ]
+    },
+    {
+      "menu": "LogOut",
+      "link": "/logout",
+      "submenus": [
+        {}
+      ]
+    }
+  ],
+  "menupadrao": [
+    {
+      "menu": "Faça o Login para poder ter acesso ao Sistema",
+      "link": "/",
+      "submenus": [
+        {}
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Rafael",
+      "email": "Rafa@gmail.com",
+      "password": "pepo1969"
+    }
+  ]
+}

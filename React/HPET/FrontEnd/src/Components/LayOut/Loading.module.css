@@ -1,0 +1,19 @@
+.loading_container {
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {    
+    width: 27px;
+    height: 27px;
+}
+
+.loader_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 5px;
+}

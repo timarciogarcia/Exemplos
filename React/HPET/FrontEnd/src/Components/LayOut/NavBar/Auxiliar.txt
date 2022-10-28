@@ -1,0 +1,50 @@
+
+  var monta = ""
+  monta += "<nav className={styles.menu}>"
+  monta += "<Container>"
+  monta += '    <Link to="/" className={styles.sociallist}>'
+  monta += "      <FaHospitalSymbol />"
+  monta += "      Pet"
+  monta += "    </Link>"
+  monta += "    <ul className={styles.list}>"
+  for (var i = 0; i < var1.length; i++) {
+    monta += "      <li className={styles.item}>"
+    monta += "         <Link to='/'>"
+    monta+= var1[i].Menutop
+    monta+= "</Link>"
+
+    monta += "            <ul className={styles.list}>"
+    for (var j = 0; j < var1[i].sub.length; j++) {
+                monta += "<li className={styles.item}>"
+                monta += `<Link to="${var1[i].sub[j].Path}">${var1[i].sub[j].Menu}</Link>`
+                monta += "</li>"
+    }
+    monta += "          </ul>"
+    monta += "      </li>"
+  }
+  monta += " </ul>"
+  monta += "{!removeLoading && <Loading />}"
+  monta += "</Container>"
+  monta += "</nav>"
+
+  console.log(monta);
+  let parser = new DOMParser();
+  let doc = parser.parseFromString(monta, "text/html"); 
+  console.log(doc);
+  
+  for (var i = 0; i < var1.length; i++) {
+    console.log("Var1[i].sub", var1[i].Menutop);
+     for (var j = 0; j < var1[i].sub.length; j++) {
+      console.log("Var1[i].sub[?]", var1[i].sub[j].Path + " - " + var1[i].sub[j].Menu);
+    }
+  }
+
+    var1.map((item) => {
+      console.log("item.sub", item.Menutop);
+      item.sub.map((sub) => {
+        console.log("sub.sub", sub.Path + " - " + sub.Menu);
+      })
+  });
+
+
+

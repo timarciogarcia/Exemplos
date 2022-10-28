@@ -1,0 +1,24 @@
+.btn  {
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(3, 44, 155);
+    color: rgb(3, 44, 155);
+    border-radius: 0.25rem;
+    padding: 0.4rem;
+    font-size: 14px;
+    width: 120px;
+    height: 33px;
+    text-decoration: none;
+    display: flex;    
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+.btn:hover {
+    background-color: rgb(3, 44, 155);
+    border: 1px solid rgb(129, 172, 252);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+  }  
