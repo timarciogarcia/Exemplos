@@ -1,119 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DESAFIO JS/HTML/CSS</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-</head>
-
-<body>  
-  <div class="container">    
-    <div class="header">
-      <label onclick="utils.sizeScreen()">Lista dos Produtos</label>
-      <div>
-        <label class="pesquisa">Pesquisa:</label>
-        <input onclick="search.placeHolderClear()" onkeyup="search.onSearchForWord()" type="text" id="m-search" name="search" title="Digite aqui sua pesquisa." />
-        <button class="buttonClear" title="Apagar os dados da consulta e retornar as informações originais" onclick="search.clearSearch()"><i class="bx bx-eraser"></i>Limpar</button>
-      </div>
-      <div>
-      <button onclick="dataBase.insertItem()" id="new"  title="Incluir um novo produto">Incluir</i></button>
-      </div>
-    </div>
-
-    <div class="divTable">
-      <table>
-        <thead>
-          <tr>
-            <th>Id</th>
-            <th>Descrição</th>
-            <th>Categoria</th>
-            <th>Peso<br>(Cm)</th>
-            <th>Altura<br>(Cm)</th>
-            <th>Largura<br>(Cm)</th>
-            <th>Comprimento<br>(Cm)</th>
-            <th>Estoque<br>(Un)</th>
-            <th>Data de<br>Cadastro</th>
-            <th class="acao">Editar</th>
-            <th class="acao">Excluir</th>
-          </tr>
-        </thead>
-        <tbody class="list">
-        </tbody>
-      </table>
-    </div>
-
-    <div class="modal-container">
-      <div class="modal">
-        <h2 id="m-titulo"></h2>
-        <form>
-
-          <input id="m-id" type="hidden" maxlength="25"  />
-          <input id="m-index" type="hidden" maxlength="25"  />
-  
-          <label for="m-descricao">Descrição
-          <input id="m-descricao" type="text" maxlength="25" required="true" />
-          </label>
-
-          <label for="m-categoria">Tipos de Embalagens:
-          <select id="m-categoria" title="Selecione o tipo da embalagem"  required="true" >
-            <option value="Papelão">Papelão</option>
-            <option value="Isopor">Isopor</option>
-            <option value="Alumínio">Alumínio</option>
-            <option value="Plástico" selected>Plástico</option>
-          </select>
-          </label>
-
-          <div>
-            <label for="m-peso">Peso (Gr)
-            <input id="m-peso" type="number" title="Preencha o peso em gramas" maxlength="6" min="0" oninput="validity.valid||(value='');"  required="true" />
-            </label>
-            &nbsp;
-            <label for="m-altura">Altura (Cm)
-            <input id="m-altura" type="number" title="Preencha a altura em centímetros" maxlength="6" min="0" oninput="validity.valid||(value='');" required="true" />
-            </label>
-            &nbsp;
-            <label for="m-largura">Largura (Cm)
-            <input id="m-largura" type="number"  title="Preencha a largura em centímetros" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
-            </label>
-            &nbsp;
-            <label for="m-comprimento">Comprimento (Cm)
-            <input id="m-comprimento" type="number"  title="Preencha o comprimento em centímetros" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
-            </label>
-            &nbsp;
-            <label for="m-estoque">Estoque (Un)
-            <input id="m-estoque" type="number"  title="Preencha o estoque em unidades" maxlength="6" min="0"  oninput="validity.valid||(value='');" required="true" />
-            </label>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Controle de Atividade</title>
+  </head>
+  <body id="body">
+    <header id="header">
+        <img src="./img/image.png" alt="Logo" title="SMN - JOÃO PESSOA - PB"/>
+    </header>
+    <div>
+      <div class="container">
+        <div class="container1">
+          <div class="search">
+            <form id="searchForm">
+              <button id="m-buttonLupa" class="buttonLupa" onclick="">
+                  <img src="./img/lupa.png" width="20px" alt="Lupa" />
+              </button>
+              <input
+                type="text"
+                id="m-pesquisa"
+                name="pesquisa"
+                title="Digite aqui sua pesquisa."
+                placeholder="Procurar"
+              />
+              <select
+                id="m-filtro"
+                name="filtro"
+                title="Escolha o tipo de filtro"
+              >
+                <option value="0" selected >Filtrar</option>
+                <option value="1">Usuário</option>
+                <option value="2">Atividade</option>
+                <option value="3">Tipo de Atividade</option>
+              </select>
+              <button id="m-buttonSearch" class="botaoSearch">
+                <i
+                  id="pesquisa"
+                  onclick=""
+                  class="bx bx-search"
+                  title="Clique aqui para Pesquisar !"
+                ></i>
+              </button>
+              <button
+                id="m-clearSearch"
+                class="botaoSearch"
+                onclick="search.clearSearch()"
+                title="Clique aqui para Limpar a Pesquisar !"
+              >
+                <i
+                  id="limpaPesquisa"
+                  onclick=""
+                  class="bx bx-x"
+                  title="Clique aqui para Limpar a Pesquisar !"
+                ></i>
+              </button>
+            </form>
           </div>
-          <button onclick="dataBase.saveItem()" class="salvar" id="btnSalvar" title="Salvar as informações">S A L V A R</button>
-          <button onclick="dataBase.voltar()" class="voltar" id="btnVoltar" title="Voltar e não salvar as informações">V O L T A R</button>
-        </form>
+          <div class="input">
+            <form id="inputForm">
+              <input id="m-index" type="text" hidden="true" />
+              <div>
+                <label for="m-usuario">
+                  <b>USUÁRIO:</b>
+                  <input
+                    id="m-usuario"
+                    type="text"
+                    maxlength="25"
+                    title="Nome do Usuário"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="m-atividade">
+                  <b>ATIVIDADE:</b>
+                  <input
+                    id="m-atividade"
+                    type="text"
+                    maxlength="25"
+                    title="Atividade"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="m-tipodeatividade">
+                  <b>TIPO DE ATIVIDADE:</b>
+                  <input
+                    id="m-tipodeatividade"
+                    type="text"
+                    maxlength="25"
+                    title="Tip de Atividade"
+                  />
+                </label>
+              </div>
+              <div>
+                <label for="m-botaosave">
+                  <b>&nbsp;</b>
+                  <button class="botaoSearch" id="botaoSearch" onclick="dataBase.updateByButton()">
+                    <i
+                      id="limpaPesquisa"
+                      class="bx bx-save"
+                      title="Clique aqui para Salvar !"
+                    ></i>
+                  </button>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="timer">
+            <label id="watch" title="Tempo Decorrido">00:00:00</label>
+          </div>
+          <div id="buttontimer" class="buttontimer">
+            <i
+              id="start"
+              onclick="timeControl.start()"
+              class="bx bx-play"
+              title="Iniciar"
+            ></i>
+            <i
+              id="pause"
+              onclick="timeControl.pause()"
+              class="bx bx-pause"
+              title="Pausar"
+            ></i>
+            <i
+              id="stop"
+              onclick="timeControl.stop()"
+              class="bx bx-stop"
+              title="Parar"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="tablecontainer" id="tablecontainer">
+        <table class="table">
+          <thead>
+            <tr>
+              <th width="25%">
+                USUÁRIO
+                <i
+                  id="order"
+                  onclick="table.sortByUsuario(true)"
+                  class="bx bx-arrow-from-bottom"
+                  title="Ordenar"
+                ></i>
+              </th>
+              <th width="25%">
+                ATIVIDADE
+                <i
+                  id="order"
+                  onclick="table.sortByAtividade(true)"
+                  class="bx bx-arrow-from-bottom"
+                  title="Ordenar"
+                ></i>
+              </th>
+              <th width="25%">
+                TIPO DE ATIVIDADE
+                <i
+                  id="order"
+                  onclick="table.sortByTipoDeAtividade(true)"
+                  class="bx bx-arrow-from-bottom"
+                  title="Ordenar"
+                ></i>
+              </th>
+              <th width="25%">
+                TEMPO
+                <i
+                  id="order"
+                  onclick="table.sortByTempo(true)"
+                  class="bx bx-arrow-from-bottom"
+                  title="Ordem Crescente"
+                ></i>
+                <i
+                  id="order"
+                  onclick="table.sortByTempo(false)"
+                  class="bx bx-arrow-from-top"
+                  title="Ordem Decrescente"
+                ></i>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="m-list" class="list"></tbody>
+        </table>
+      </div>
+      <div class="pagination" id="pagination">
+        <button id="m-first"><i class="bx bx-first-page"></i></button>
+        <button id="m-prev"><i class="bx bx-caret-left"></i></button>
+        <button id="m-page" class="pagenumber"></button>
+        <button id="m-next"><i class="bx bx-caret-right"></i></button>
+        <button id="m-last"><i class="bx bx-last-page"></i></button>
       </div>
     </div>
-  </div>
-
-  <div class="pagination">
-    <div id="fisrt" class="first" title="Primeira página"><button><i class='bx bx-first-page'></i></button></div>
-    <div id="prev" class="prev" title="Página anterior"><button><i class='bx bx-caret-left'></i></button></div>
-    <div id="numbers" class="numbers" title="Página atual" class="match"><button class="m-preenche"></button></div>
-    <div id="next" class="next" title="Próxima página"><button><i class='bx bx-caret-right'></i></button></div>
-    <div id="last" class="last" title="Última página"><button><i class='bx bx-last-page'></i></button></div>
-  </div>
-
-  <div class="divplus">
-    <div></div>
-    <div class="plus">
-      <a href="javascript:dataBase.populated()">Popular DB </a>
-      <a href="javascript:dataBase.erase()">Limpar DB</a>
-    </div>
-    <div class="plus">
-      <label> - Indústria de Embalagens Desafio Brasil Ltda.</label>
-    </div>
-  </div>  
-  <script src="script.js"></script>
-</body>
-
+    <script src="./js/script.js"></script>
+  </body>
 </html>
